@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keerthana S | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 20px 50px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 40px 50px;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0d47a1;
+      display: inline-block;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .projects .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .projects .card h3 {
+      color: #0288d1;
+      margin-bottom: 10px;
+    }
+
+    .projects .card p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #0288d1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d47a1;
+      color: white;
+    }
+
+    footer a {
+      color: #90caf9;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      header,
+      section {
+        padding: 20px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Keerthana S</h1>
+    <p>Electronics & Communication Engineering | Developer | Tech Enthusiast | VLSI | Verilog | Digital System Design</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      👋🏻 Hi! I’m Keerthana S, an Electronics and Communication Engineering student passionate about technology, innovation, and continuous learning.
+      My key interests are VLSI design, FPGA systems, and Verilog. I’ve developed strong leadership, teamwork, and content creation skills through various roles in tech communities.
+      Always eager to collaborate and grow 🚀
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>110 2-Channel Datalogger for Locomotives</h3>
+      <p>Designed a dual-channel system for monitoring three-phase and conventional electric locomotives using sensor-based data logging.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landslide Prediction & Alert System</h3>
+      <p>Developed a hardware-software system to predict landslide risks using sensors, ESP32, and a real-time web dashboard.</p>
+    </div>
+
+    <div class="card">
+      <h3>System Automatic Traffic Light Using 8051</h3>
+      <p>Implemented a microcontroller-based traffic light system for automating signals with timers and pedestrian detection.</p>
+    </div>
+
+    <div class="card">
+      <h3>Posture Monitoring System</h3>
+      <p>A wearable Arduino system using MPU6050 and Flex sensors to monitor upper and lower back posture with alert mechanisms and live dashboard.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI-Powered Skin Disease Chatbot</h3>
+      <p>Built a skin disease detection chatbot using image classification and NLP for providing suggestions and basic medical information.</p>
+    </div>
+
+    <div class="card">
+      <h3>Worker Friendly Website for Daily Hire</h3>
+      <p>Designed a responsive web platform to connect laborers with job providers, including real-time availability, profiles, and filters.</p>
+    </div>
+
+    <div class="card">
+      <h3>Food Application Using Figma</h3>
+      <p>Designed a user-friendly food delivery app prototype using Figma, focusing on UI/UX flow, ordering experience, and delivery tracking.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>
+      Connect on 
+      <a href="https://www.linkedin.com/in/keerthana-s-b5301326a" target="_blank">LinkedIn</a> | 
+      <a href="mailto:keerthanasasi.2004@gmail.comS">Email</a>
+    </p>
+    <p>© 2025 Keerthana S</p>
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Message Sent Successfully!");
+    }
+  </script>
+
+</body>
+</html>
